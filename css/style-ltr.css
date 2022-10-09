@@ -1,0 +1,115 @@
+body{
+    direction: ltr;
+    text-align: left;
+}
+
+.about_details {
+    margin-left: 14%;
+    margin-right: auto ;
+}
+.about_2 {
+    margin-left: 30%;
+    margin-right: auto;
+}
+.external_img img {
+    margin-left: 25%;
+    margin-right: auto;
+}
+.step_circle:before {
+    left: 120%;
+    right: 0;
+}
+.article_box .ar_image .ar_date {
+    right: 12px;
+    left: auto;
+}
+.fa-circle-arrow-left{
+    transform: rotate(180deg);
+}
+.arrow_circle svg {
+    transform: rotate(-45deg);
+}
+.accordion-button:not(.collapsed) svg {
+    transform: rotate(-135deg);
+}
+
+.circle_footer {
+    margin-right: 30px;
+    margin-left: 0;
+}
+.input {
+    border-top-left-radius: 10px !important;
+    margin-right: -4px !important;
+    margin-left: 0 !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+.button {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+.single_query img {
+    margin-right: 18px;
+    margin-left: auto;
+}
+.queries_items .single_query .time {
+    right: 10px;
+    left: auto;
+}
+.fa-chevron-left{transform: rotate(180deg);}
+.queryReport {
+    right: 4%;
+    left: auto;
+}
+.query_down {
+    right: 16%;
+    left: auto;
+}
+.form-group3 label:before{
+    margin-right: 13px;
+    margin-left: auto;
+}
+.queryTime {
+    right: 26%;
+    left: auto;
+}
+.iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+    left: auto;
+    right: 0;
+}
+
+.addQuerySteps > .singleStep::before {
+    left: 74%;
+    right: auto;
+}
+.single_query_form1 {
+    margin-left: 13% !important;
+    margin-right: auto;
+}
+.parent-img {
+    right: 50px;
+    left: auto;
+}
+header .dropdown {
+    right: 18%;
+    left: auto;
+}
+.radio_label .design {
+    margin-right: 12px;
+    margin-left: auto;
+}
+.fa-chevron-down {
+    right: 3%;
+    left: auto;
+}
+.show_pass {
+    right: 3% !important;
+    left: auto !important;
+}
+.reply_content::before {
+}
+.button.lang{
+    margin-left: auto;
+    margin-right: 25px;
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome v.6 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!--  Flatpicker Styles  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
+    
+    <!-- bootstrap5 csn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- main styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- english stlye -->
+        <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+
+    <title>استبيانات</title>
+</head>
+<body>
+    <!-- whole page -->
+    <main>
+       <!-- start header -->
+       <header>
+        <!-- header top -->
+        <section class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="text-center  d-flex justify-content-start justify-content-md-end"><span>ahmedsamerlego@gmail.com</span> / <span>01013746111 - 01023489862</span></p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class=" d-flex justify-content-start justify-content-md-end">
+                            <button class="btn lang">
+                                english
+                                <i class="fa-solid fa-globe"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- navbar -->
+        <section class="navbar">
+            <div class="container">
+                <div class="row w-100 align-items-center  ">
+                   
+                    <!-- logo -->
+                    <div class="col-lg-2 col-sm-2 col-6">
+                        <div class="logo">
+                            <img src="imgs/cyber.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <!-- links -->
+                    <div class="col-lg-6 col-sm-1 col-6">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">عن استبيان</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="maimQueries.html">استبيانات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="commonQuestions.html">اسئلة مكررة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="contactUs.html">تواصل معنا</a>
+                            </li>
+                              <li class="nav-item">
+                                <a class="nav-link " href="articles.html">المقالات</a>
+                            </li>
+                        </ul>
+
+                        <!-- toggle bar => show only in 768px -->
+                        <span class="toggle_bar">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </div>
+                    <!-- user interaction -->
+                    <div class="col-lg-4 col-sm-9 col-12">
+                        <div class="user_inter d-flex justify-content-sm-end justify-content-between align-items-center">
+                            <a class="alert" href="alerts.html">
+                                <i class="fa-regular fa-bell color1"></i>
+                                <span class="alert_circle"></span>
+                            </a>
+                            <div class="dropdownContent">
+                                <button href="login.html" class="btn button3 d-flex justify-content-between align-items-center">
+                                    <i class="fa-solid fa-user"></i>
+                                     الملف الشخصي 
+                                     <i class="fa-solid fa-chevron-up"></i>
+                                </button>
+
+                                <!-- personal dropdown -->
+                                <div class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="personalAcc.html" >الملف الشخصي</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="queries.html" class="active">استبياناتي</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="pills.html">الفواتير</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="bocket.html">المحفظة</a>
+                                        </li>
+
+                                        <li>
+                                           <a href="complines.html">الشكاوي والمقترحات</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="conditions.html">الشروط والاحكام</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">عن المنصة</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="login.html">تسجيل الخروج</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn button1" type="button" data-bs-toggle="modal" data-bs-target="#est_modal"> اضافة طلب استبيان </button>
+                            <!-- start estbian modal -->
+                            <div class="modal fade est_modal" id="est_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <h5 class="fw-bold text-center mt-4">اضافة استبيان جديد :</h5>
+                                        <p class="color3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, sequi?</p>
+                                        <hr>
+                                        <div class="queries">
+                                            <!--single query -->
+                                            <div class="single_query">
+                                                <a href="addQuery.html" class="d-flex align-items-center">
+                                                    <div class="query_img">
+                                                        <img src="imgs/cyber.jpg" alt="query image">
+                                                    </div>
+                                                    <div class="query_content">
+                                                        <h6 class="color2">اضف استبيان</h6>
+                                                        
+                                                        <p class="color3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, officiis.</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <!--single query -->
+                                            <div class="single_query">
+                                                <a href="addExternalQuery.html" class="d-flex align-items-center">
+                                                    <div class="query_img">
+                                                        <img src="imgs/cyber.jpg" alt="query image">
+                                                    </div>
+                                                    <div class="query_content">
+                                                        <h6 class="color2">اضف استبيان خارجي</h6>
+                                                        
+                                                        <p class="color3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, officiis.</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <!--single query -->
+                                            <div class="single_query">
+                                                <a href="addSearchServices.html" class="d-flex align-items-center">
+                                                    <div class="query_img">
+                                                        <img src="imgs/cyber.jpg" alt="query image">
+                                                    </div>
+                                                    <div class="query_content">
+                                                        <h6 class="color2">اضافة خدمة بحثية</h6>
+                                                        
+                                                        <p class="color3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, officiis.</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+       </header>
+       <!-- end header -->
+
+        <!-- start personal form --> 
+        <section id="personal_form">
+            <div class="container">
+                <div class="personal_form">
+                    <!-- logo -->
+                    <div class="personal_logo d-flex justify-content-center">
+                        <img src="imgs/cyber.jpg" alt="Logo" class="mt-5">
+                    </div>
+                    <h5 class="color1 text-center">تغيير كلمة المرور</h5>
+
+                    <form action="" class="pb-5">
+                        <div class="form_group mb-3 mt-3 d-flex flex-column">
+                            <label for="old_password" class="form-label">كلمة المرور القديمة</label>
+                            <input type="password" id="old_password" name="" value="" placeholder="برجاء ادخال كلمة المرور القديمة" class="password form-control" >
+                            <span class="show_pass"><i class="fa-solid fa-eye"></i></span>
+                        </div>
+        
+                        <div class="form_group mb-3 mt-3 d-flex flex-column">
+                            <label for="pass" class="form-label">كلمة المرور الجديدة</label>
+                            <input type="password" id="pass" name="" value="" placeholder="برجاء ادخال كلمة المرور الجديدة" class="password form-control" >
+                            <span class="show_pass"><i class="fa-solid fa-eye"></i></span>
+                        </div>
+        
+                        <div class="form_group mb-3 mt-3 d-flex flex-column">
+                            <label for="confirm_pass" class="form-label">تأكيد كلمة المرور</label>
+                            <input type="password" id="confirm_pass" name="" value="" placeholder="تأكيد كلمة المرور" class="password form-control" onkeyup="validate_password()">
+                            <span class="show_pass"><i class="fa-solid fa-eye"></i></span>
+                        </div>
+                        <span id="wrong_pass_alert"></span>
+        
+        
+                        <div class="user_inter user_inter_4 d-flex justify-content-center mt-4">
+                            <button class="btn button1 submit"> 
+                                حفظ  
+                                <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </button>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- end personal form --> 
+        <!-- start footer -->
+        <footer class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="footer_desc d-flex justify-content-start align-items-start flex-column">
+                            <!-- logo -->
+                            <img src="imgs/cyber.jpg" alt="logo" class="footer_img">
+                            <!-- desc -->
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea temporibus ratione odit cumque nisi consectetur illo saepe exercitationem minima enim.</p>
+                            <!-- form -->
+                            <form class="input-group mb-3">
+                                <input type="text" class="form-control input" placeholder="ahmadsamerlego@gmail.com" aria-label="Example text with button addon" aria-describedby="button-addon1" >
+                                <button class="btn button bg-color2 color-white" id="button-addon1">اشترك الان</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="links">
+                            <h6 class="mb-4">استبيان</h6>
+                            <div class="main_links d-flex flex-column justify-content-start align-items-start">
+                                <a href="#" class="mb-3">عن استبيان</a>
+                                <a href="#" class="mb-3">الاستبيانات</a>
+                                <a href="#" class="mb-3">الاسئلة الشائعة</a>
+                                <a href="#" class="mb-3">تواصل معنا</a>
+                                <a href="#" class="mb-3">المقالات</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="external_links">
+                            <div class="main_links d-flex flex-column justify-content-start align-items-start">
+                                <a href="#" class="mb-3 mt-5">اضف استبيان جديد</a>
+                                <a href="#" class="mb-3">اضف استبيان خارجي</a>
+                                <a href="#" class="mb-3">اضف استبيان بحثي</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="contat_us">
+                            <h5 class="mb-4">تواصل معنا</h5>
+
+                            <div class="d-flex justify-content-start mb-3">
+                                <span class="circle_footer"><i class="fa-solid fa-envelope color1"></i></span>
+                                <a href="mailto:ahmadsamerlego@gmail.com" class="color1">lego@gmail.com</a>
+                            </div>
+                            <div class="d-flex justify-content-start mb-3">
+                                <span class="circle_footer"><i class="fa-solid fa-phone-flip color1"></i></span>
+                                <a href="tel:01013746111" class="color1">01013746111</a>
+                            </div>
+                            <div class="d-flex justify-content-start mb-3">
+                                <span class="circle_footer"><i class="fa-solid fa-location-dot color1"></i></span>
+                                <span class="color1">street, Egypt</span>
+                            </div>
+
+                            <div class="socail_media mt-5 d-flex justify-content-between align-items-center">
+                                <a href="#"><img src="imgs/face.jpg" alt="facebook"></a>
+                                <a href="#"><img src="imgs/insta.png" alt="instaram"></a>
+                                <a href="#"><img src="imgs/snap.png" alt="snapchat"></a>
+                                <a href="#"><img src="imgs/twei.png" alt="twitter"></a>
+                                <a href="#"><img src="imgs/wha.jpg" alt="whatsApp"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_copy pt-3">
+                <p class="text-center color1">copyrights © 2022 awamer elshabka</p>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </main>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput-jquery.min.js" integrity="sha512-QK4ymL3xaaWUlgFpAuxY+6xax7QuxPB3Ii/99nykNP/PlK3NTQa/f/UbQQnWsM4h5yjQoMjWUhCJbYgWamtL6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--  Flatpickr  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
+
+    <!-- fontawesome v.6 cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap 5 cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+
+
+        // basic validate password confirm
+        function validate_password() {
+            var pass = document.getElementById("pass").value;
+            var confirm_pass = document.getElementById("confirm_pass").value;
+            if (pass != confirm_pass) {
+            document.getElementById("wrong_pass_alert").style.color = "red";
+            document.getElementById("wrong_pass_alert").innerHTML =
+                "☒ Use same password";
+            document.getElementById("create").disabled = true;
+            document.getElementById("create").style.opacity = 0.4;
+            } else {
+            document.getElementById("wrong_pass_alert").style.color = "green";
+            document.getElementById("wrong_pass_alert").innerHTML =
+                "🗹 Password Matched";
+            document.getElementById("create").disabled = false;
+            document.getElementById("create").style.opacity = 1;
+            }
+        }
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

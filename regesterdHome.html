@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome v.6 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap5 csn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- main styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- english stlye -->
+        <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+
+    <title>استبيانات</title>
+</head>
+<body>
+    <!-- whole page -->
+    <main>
+        <!-- start header -->
+        <header>
+            <!-- header top -->
+            <section class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="text-center  d-flex justify-content-start justify-content-md-end"><span>ahmedsamerlego@gmail.com</span> / <span>01013746111 - 01023489862</span></p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class=" d-flex justify-content-start justify-content-md-end">
+                                <button class="btn lang">
+                                    english
+                                    <i class="fa-solid fa-globe"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+    
+    
+            <!-- navbar -->
+            <section class="navbar">
+                <div class="container">
+                    <div class="row w-100 align-items-center  ">
+                       
+                        <!-- logo -->
+                        <div class="col-lg-2 col-sm-2 col-6">
+                            <div class="logo">
+                                <img src="imgs/cyber.jpg" alt="logo">
+                            </div>
+                        </div>
+                        <!-- links -->
+                        <div class="col-lg-6 col-sm-1 col-6">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">الرئيسية</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">عن استبيان</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="maimQueries.html">استبيانات</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="commonQuestions.html">اسئلة مكررة</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="contactUs.html">تواصل معنا</a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link " href="articles.html">المقالات</a>
+                                </li>
+                            </ul>
+    
+                            <!-- toggle bar => show only in 768px -->
+                            <span class="toggle_bar">
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                        </div>
+                        <!-- user interaction -->
+                        <div class="col-lg-4 col-sm-9 col-12">
+                            <div class="user_inter d-flex justify-content-sm-end justify-content-between align-items-center">
+                                <a class="alert" href="alerts.html">
+                                    <i class="fa-regular fa-bell color1"></i>
+                                    <span class="alert_circle"></span>
+                                </a>
+                                <div class="dropdownContent">
+                                    <button href="login.html" class="btn button3 d-flex justify-content-between align-items-center">
+                                        <i class="fa-solid fa-user"></i>
+                                         الملف الشخصي 
+                                         <i class="fa-solid fa-chevron-up"></i>
+                                    </button>
+    
+                                    <!-- personal dropdown -->
+                                    <div class="dropdown">
+                                        <ul>
+                                            <li>
+                                                <a href="personalAcc.html" >الملف الشخصي</a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="queries.html" class="active">استبياناتي</a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="pills.html">الفواتير</a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="bocket.html">المحفظة</a>
+                                            </li>
+    
+                                            <li>
+                                               <a href="complines.html">الشكاوي والمقترحات</a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="conditions.html">الشروط والاحكام</a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="#">عن المنصة</a>
+                                            </li>
+    
+                                            <li>
+                                                <a href="login.html">تسجيل الخروج</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="btn button1" type="button" data-bs-toggle="modal" data-bs-target="#est_modal"> اضافة طلب استبيان </button>
+                                <!-- start estbian modal -->
+                                <div class="modal fade est_modal" id="est_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <h5 class="fw-bold text-center mt-4">اضافة استبيان جديد :</h5>
+                                            <p class="color3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, sequi?</p>
+                                            <hr>
+                                            <div class="queries">
+                                                <!--single query -->
+                                                <div class="single_query">
+                                                    <a href="addQuery.html" class="d-flex align-items-center">
+                                                        <div class="query_img">
+                                                            <img src="imgs/cyber.jpg" alt="query image">
+                                                        </div>
+                                                        <div class="query_content">
+                                                            <h6 class="color2">اضف استبيان</h6>
+                                                            
+                                                            <p class="color3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, officiis.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+    
+                                                <!--single query -->
+                                                <div class="single_query">
+                                                    <a href="addExternalQuery.html" class="d-flex align-items-center">
+                                                        <div class="query_img">
+                                                            <img src="imgs/cyber.jpg" alt="query image">
+                                                        </div>
+                                                        <div class="query_content">
+                                                            <h6 class="color2">اضف استبيان خارجي</h6>
+                                                            
+                                                            <p class="color3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, officiis.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+    
+                                                <!--single query -->
+                                                <div class="single_query">
+                                                    <a href="addSearchServices.html" class="d-flex align-items-center">
+                                                        <div class="query_img">
+                                                            <img src="imgs/cyber.jpg" alt="query image">
+                                                        </div>
+                                                        <div class="query_content">
+                                                            <h6 class="color2">اضافة خدمة بحثية</h6>
+                                                            
+                                                            <p class="color3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, officiis.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- end header -->
+
+        <!-- start carousal -->
+        <section id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="imgs/s1.jpg" class="d-block w-100" alt="carousal image">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>استبيان</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="imgs/s2.jpg" class="d-block w-100" alt="carousal image">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>استبيان</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/s1.jpg" class="d-block w-100" alt="carousal image">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>استبيان</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <i class="fa-solid fa-circle-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <i class="fa-solid fa-circle-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <!-- end carousal -->
+
+        <!-- start about us -->
+        <section id="about_us">
+            <h3 class="text-center color1 head_title">عن استبيان</h3>
+            <p class="text-center color3">هذا النص هو مثال على نص يمكن ان يستبدل</p>
+
+                <div class="row w-100">
+                    <div class="col-lg-6">
+                        <div class="about_details mb-5">
+                            <p>, consectetur adipisicing elit. Aspernatur, placeat fugit. Earum incidunt porro, odio rem veritatis magnam a, perferendis ipsam repellat nihil fugiat minus quis vero vel! Magnam, numquam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, placeat fugit. Earum incidunt porro, odio rem veritatis magnam a, perferendis ipsam repellat nihil fugiat minus quis vero vel! Magnam, numquam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, placeat fugit. Earum incidunt porro, odio rem veritatis magnam a, perferendis ipsam repellat nihil fugiat minus quis vero vel! Magnam, numquam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, placeat fugit. Earum incidunt porro, odio rem veritatis magnam a, perferendis ipsam repellat nihil fugiat minus quis vero vel! Magnam, numquam!</p>
+                            <div class="user_inter user_inter_2 d-flex justify-content-start">
+                                <a class="btn button1"> الاستبيانات </a>
+                                <a href="#" class="btn button2"> اضافة استبيان </a>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="about_imgs">
+                            <div class="d-flex justify-content-end">
+                                <img src="imgs/s1.jpg" alt="about us" class="about_1">
+                            </div>
+                            <div>
+                                <img src="imgs/s2.jpg" alt="about us" class="about_2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- end about us -->
+
+        <!-- استبيان خارجي -->
+
+        <section id="external">
+            <h3 class="text-center color1 head_title">استبيان خارجي</h3>
+            <p class="text-center color3 mb-5">هذا النص هو مثال على نص يمكن ان يستبدل</p>
+            <div class="container2">
+                <div class="row w-100 align-items-center">
+                    <div class="col-lg-8">
+                        <div class="mb-5">
+                            <p>, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, placeat fugit. Earum incidunt porro, odio rem veritatis magnam a, perferendis ipsam repellat nihil fugiat minus quis vero vel! Magnam, numquam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, placeat fugit. Earum incidunt porro, odio rem veritatis magnam a, perferendis ipsam repellat nihil fugiat minus quis vero vel! Magnam, numquam!</p>
+                            <div class="user_inter user_inter_3 d-flex justify-content-start">
+                                <a href="#" class="btn button1"> ارسال طلب استبيان خارجي </a>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="external_img">
+                                <img src="imgs/s1.jpg" alt="about us" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- خدمات بحثية -->
+        
+        <section id="search_services">
+            <h3 class="text-center color1 head_title">خدمات بحثية</h3>
+            <p class="text-center color3 mb-5">هذا النص هو مثال على نص يمكن ان يستبدل</p>
+            <div class="container2">
+                <div class="row w-100 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="external_img">
+                                <img src="imgs/s1.jpg" alt="about us" class="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="mb-5">
+                            <p>, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, placeat fugit. Earum incidunt porro, odio rem veritatis magnam a, perferendis ipsam repellat nihil fugiat minus quis vero vel! Magnam, numquam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, placeat fugit. Earum incidunt porro, odio rem veritatis magnam a, perferendis ipsam repellat nihil fugiat minus quis vero vel! Magnam, numquam!</p>
+                            <div class="user_inter user_inter_3 d-flex justify-content-start">
+                                <a href="#" class="btn button1"> ارسال طلب استبيان خارجي </a>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- خطوات الاستبيان -->
+        <section id="search_steps">
+            <h3 class="text-center color1 head_title">طريقة عمل استبيان</h3>
+            <p class="text-center color3 mb-5">هذا النص هو مثال على نص يمكن ان يستبدل</p>
+
+            <div class="container">
+                <div class="steps d-flex justify-content-center">
+                    <div class="row steps_strips">
+                        <!-- single steps -->
+                        <div class="col-md-4">
+                            <div class="step d-flex flex-column justify-content-center align-items-center">
+                                <!-- step image -->
+                                <span class="step_circle">
+                                    <img src="imgs/s1.jpg" alt="step image">
+                                </span>
+                                <!-- step title -->
+                                <h5>انشئ</h5>
+                                <!--  step description-->
+                                <p>هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل</p>
+                            </div>
+                        </div>
+
+                        <!-- single steps -->
+                        <div class="col-md-4">
+                            <div class="step d-flex flex-column justify-content-center align-items-center">
+                                <!-- step image -->
+                                <span class="step_circle">
+                                    <img src="imgs/s1.jpg" alt="step image">
+                                </span>
+                                <!-- step title -->
+                                <h5>انشئ</h5>
+                                <!--  step description-->
+                                <p>هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل</p>
+                            </div>
+                        </div>
+
+                        <!-- single steps -->
+                        <div class="col-md-4">
+                            <div class="step d-flex flex-column justify-content-center align-items-center">
+                                <!-- step image -->
+                                <span class="step_circle">
+                                    <img src="imgs/s1.jpg" alt="step image">
+                                </span>
+                                <!-- step title -->
+                                <h5>انشئ</h5>
+                                <!--  step description-->
+                                <p>هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- points -->
+        <section id="points">
+            <h4 class="text-center color1 fw-bold">قم بتجميع نقاط بالاجابة على الاستبيانات وتحوليها لمبالغ ماليى</h4>
+            <p class="text-center color3 mb-5">هذا النص هو مثال على نص يمكن ان يستبدل</p>
+
+
+            <!-- points description -->
+            <div class="container">
+                <p>هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل</p>
+                <div class="user_inter user_inter_3 d-flex justify-content-center mt-5">
+                    <a href="#" class="btn button1"> اجب على الاستبيانات </a>
+                </div> 
+            </div>
+        </section>
+
+        <!-- start articles -->
+        <section id="articles">
+            <h3 class="text-center color1 head_title">المقالات</h3>
+            <p class="text-center color3 mb-5">هذا النص هو مثال على نص يمكن ان يستبدل</p>
+            <!-- articles -->
+            <div class="articles mt-5">
+                <div class="container">
+                    <div class="row">
+                        <!-- single article -->
+                        <div class="col-md-4">
+                            <div class="article_box d-flex flex-column">
+                                <!-- article image -->
+                                <div class="ar_image">
+                                    <img src="imgs/s1.jpg" alt="artcile image">
+                                    <span class="ar_date">30/8/2022</span>
+                                </div>
+                                <!-- article details -->
+                                <div class="ar_details d-flex flex-column justify-content-start">
+                                    <h6>هذا النص هو مثال على نص يمكن ان يستبدل</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vel in, molestiae porro dolorum non omnis nulla animi culpa! Quae.</p>
+                                    <a href="singleArticle.html" class="color2">
+                                        اقرا المزيد
+                                        <i class="fa-solid fa-circle-arrow-left"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single article -->
+                        <div class="col-md-4">
+                            <div class="article_box d-flex flex-column">
+                                <!-- article image -->
+                                <div class="ar_image">
+                                    <img src="imgs/s1.jpg" alt="artcile image">
+                                    <span class="ar_date">30/8/2022</span>
+                                </div>
+                                <!-- article details -->
+                                <div class="ar_details d-flex flex-column justify-content-start">
+                                    <h6>هذا النص هو مثال على نص يمكن ان يستبدل</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vel in, molestiae porro dolorum non omnis nulla animi culpa! Quae.</p>
+                                    <a href="singleArticle.html" class="color2">
+                                        اقرا المزيد
+                                        <i class="fa-solid fa-circle-arrow-left"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single article -->
+                        <div class="col-md-4">
+                            <div class="article_box d-flex flex-column">
+                                <!-- article image -->
+                                <div class="ar_image">
+                                    <img src="imgs/s1.jpg" alt="artcile image">
+                                    <span class="ar_date">30/8/2022</span>
+                                </div>
+                                <!-- article details -->
+                                <div class="ar_details d-flex flex-column justify-content-start">
+                                    <h6>هذا النص هو مثال على نص يمكن ان يستبدل</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vel in, molestiae porro dolorum non omnis nulla animi culpa! Quae.</p>
+                                    <a href="singleArticle.html" class="color2">
+                                        اقرا المزيد
+                                        <i class="fa-solid fa-circle-arrow-left"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user_inter user_inter_3 d-flex justify-content-center mt-5">
+                        <a href="articles.html" class="btn button1"> كل المقالات </a>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!-- end articles -->
+
+        <!--start common questions  -->
+        <section id="common_ques">
+            <h3 class="text-center color1 head_title">الاسئلة الشائعة</h3>
+            <p class="text-center color3 mb-5">هذا النص هو مثال على نص يمكن ان يستبدل</p>
+
+            <!-- questions -->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <!-- single accordion -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      <span>هذا النص هو مثال على نص يمكن ان يستبدل ؟</span>
+                     <span class="arrow_circle"> <i class="fa-solid fa-arrow-down"></i></span>
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <p> هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- single accordion -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        <span>هذا النص هو مثال على نص يمكن ان يستبدل ؟</span>
+                        <span class="arrow_circle"> <i class="fa-solid fa-arrow-down"></i></span>   
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p> هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- single accordion -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        <span>هذا النص هو مثال على نص يمكن ان يستبدل ؟</span>
+                        <span class="arrow_circle"> <i class="fa-solid fa-arrow-down"></i></span>   
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p> هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال على نص يمكن ان يستبدل </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="user_inter user_inter_3 d-flex justify-content-center mt-5">
+                <a href="commonQuestions.html" class="btn button1"> كل الاسئلة الشائعة </a>
+            </div> 
+        </section>
+        <!-- end common questions  -->
+
+        <!-- start parteners -->
+        <section id="parteners">
+            <h3 class="text-center color1 head_title">شركات تثق بنا</h3>
+            <p class="text-center color3 mb-5">هذا النص هو مثال على نص يمكن ان يستبدل</p>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="imgs/s1.jpg" alt="partener">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/s1.jpg" alt="partener">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/s1.jpg" alt="partener">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/s1.jpg" alt="partener">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/s1.jpg" alt="partener">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/s1.jpg" alt="partener">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+        <!-- end partenrs -->
+
+        <!-- start footer -->
+        <footer class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="footer_desc d-flex justify-content-start align-items-start flex-column">
+                            <!-- logo -->
+                            <img src="imgs/cyber.jpg" alt="logo" class="footer_img">
+                            <!-- desc -->
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea temporibus ratione odit cumque nisi consectetur illo saepe exercitationem minima enim.</p>
+                            <!-- form -->
+                            <form class="input-group mb-3">
+                                <input type="text" class="form-control input" placeholder="ahmadsamerlego@gmail.com" aria-label="Example text with button addon" aria-describedby="button-addon1" >
+                                <button class="btn button bg-color2 color-white" id="button-addon1">اشترك الان</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="links">
+                            <h6 class="mb-4">استبيان</h6>
+                            <div class="main_links d-flex flex-column justify-content-start align-items-start">
+                                <a href="#" class="mb-3">عن استبيان</a>
+                                <a href="#" class="mb-3">الاستبيانات</a>
+                                <a href="#" class="mb-3">الاسئلة الشائعة</a>
+                                <a href="#" class="mb-3">تواصل معنا</a>
+                                <a href="#" class="mb-3">المقالات</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="external_links">
+                            <div class="main_links d-flex flex-column justify-content-start align-items-start">
+                                <a href="#" class="mb-3 mt-5">اضف استبيان جديد</a>
+                                <a href="#" class="mb-3">اضف استبيان خارجي</a>
+                                <a href="#" class="mb-3">اضف استبيان بحثي</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="contat_us">
+                            <h5 class="mb-4">تواصل معنا</h5>
+
+                            <div class="d-flex justify-content-start mb-3">
+                                <span class="circle_footer"><i class="fa-solid fa-envelope color1"></i></span>
+                                <a href="mailto:ahmadsamerlego@gmail.com" class="color1">lego@gmail.com</a>
+                            </div>
+                            <div class="d-flex justify-content-start mb-3">
+                                <span class="circle_footer"><i class="fa-solid fa-phone-flip color1"></i></span>
+                                <a href="tel:01013746111" class="color1">01013746111</a>
+                            </div>
+                            <div class="d-flex justify-content-start mb-3">
+                                <span class="circle_footer"><i class="fa-solid fa-location-dot color1"></i></span>
+                                <span class="color1">street, Egypt</span>
+                            </div>
+
+                            <div class="socail_media mt-5 d-flex justify-content-between align-items-center">
+                                <a href="#"><img src="imgs/face.jpg" alt="facebook"></a>
+                                <a href="#"><img src="imgs/insta.png" alt="instaram"></a>
+                                <a href="#"><img src="imgs/snap.png" alt="snapchat"></a>
+                                <a href="#"><img src="imgs/twei.png" alt="twitter"></a>
+                                <a href="#"><img src="imgs/wha.jpg" alt="whatsApp"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_copy pt-3">
+                <p class="text-center color1">copyrights © 2022 awamer elshabka</p>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </main>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- fontawesome v.6 cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap 5 cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            390: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            },
+            640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            },
+            768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+            },
+            1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+            },
+        },
+        autoplay: {
+            delay: 3000,
+        },
+        });
+    </script>
+    
+</body>
+</html>
